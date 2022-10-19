@@ -1,24 +1,21 @@
 # README-----
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+最小構成でのraty4.10サンプル
+Ruby 3.1.2, Rails 6.1.7, Raty  4.1.0
 
-Things you may want to cover:
+## raty用の変更点
+* /app/javascript/packs/application.js // 17行目以下
 
-* Ruby version
+* /app/javascript/packs/raty.js
+  * https://github.com/wbotelhos/raty/releases/tag/v4.1.0
 
-* System dependencies
+* /app/views/homes/top.html.erb // 3行目以下
 
-* Configuration
+* /app/assets/images/star-half.png, star-off.png, star-on.png
 
-* Database creation
+## その他application.jsを動かす上での変更点
+* ターミナルでのjqueryインストール「yarn add jquery」
 
-* Database initialization
+* /config/webpack/environment.js // 3行目～9行目
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* /app/javascript/packs/application.js // 6行目
